@@ -7,7 +7,7 @@ import com.vishwatejaspringboot.springbootbackendrestapi.Repository.UserReposito
 import com.vishwatejaspringboot.springbootbackendrestapi.model.Role;
 import com.vishwatejaspringboot.springbootbackendrestapi.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+//import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -23,10 +23,11 @@ import java.util.Collections;
 @RestController
 @RequestMapping("/api/auth")
 //@CrossOrigin("http://localhost:3000")
-@CrossOrigin("${frontend.url}")
+@CrossOrigin("https://authentication-frontend-sigma.vercel.app/")
+//@CrossOrigin("${frontend.url}")
 public class AuthController {
-    @Value("${frontend.url}")
-    private String frontendUrl;
+//    @Value("${frontend.url}")
+//    private String frontendUrl;
     @Autowired
     private AuthenticationManager authenticationManager;
     @Autowired
