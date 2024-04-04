@@ -23,7 +23,7 @@ import java.util.Collections;
 @RestController
 @RequestMapping("/api/auth")
 //@CrossOrigin("http://localhost:3000")
-@CrossOrigin("https://authentication-frontend-sigma.vercel.app/")
+@CrossOrigin("https://authentication-frontend-sigma.vercel.app")
 //@CrossOrigin("${frontend.url}")
 public class AuthController {
 //    @Value("${frontend.url}")
